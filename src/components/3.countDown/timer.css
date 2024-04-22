@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.timmer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+p{
+    font-family: futura;
+    height: 29px;
+    width: 29px;
+}
+
+.resume{
+    padding: 5px;
+    margin: 2px;
+    background-color:#78D4F5;
+    border: none;
+    border-radius: 10px;
+}
+
+.reset{
+    padding: 5px;
+    margin: 2px;
+    background-color:#78D4F5;
+    border: none;
+    border-radius: 10px;
+}
+
+
+.start{
+    padding: 5px;
+    margin: 2px;
+    background-color:#78D4F5;
+    border: none;
+    border-radius: 10px;
+}

@@ -1,3 +1,4 @@
+import "./indexCss.css"
 function Pagination({currentPage,setCurrentPage,totalPages=10,onPageChange,nextIndex,prevIndex}){
     function generateNoOfPages(){
         const pages=[];
@@ -7,7 +8,7 @@ function Pagination({currentPage,setCurrentPage,totalPages=10,onPageChange,nextI
         return pages;
     }
 
- 
+
    
     
     return(

@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Pagination from "."
-
-
+import "./index.css"
 
 function PaginationTest(){
 
@@ -36,9 +35,9 @@ function PaginationTest(){
     return(
         <div>
             <h1>Pagination</h1>
-            <ul>
+            <ul className="list">
                 {currentListOfItem.map((listItem)=>(
-                    <li key={listItem.id}>{listItem.name}</li>
+                    <li className="product" key={listItem.id} >{listItem.name}</li>
                 ))}
             </ul>
             <Pagination
@@ -48,6 +47,8 @@ function PaginationTest(){
             nextIndex={nextIndex}
             prevIndex={prevIndex}
             />
+
+            <h1>Digital Clock Project</h1>
         </div>
     )
 }

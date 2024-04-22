@@ -1,0 +1,32 @@
+.main{
+    margin-top: 20px;
+    border: 5px solid green;
+    padding: 10px;
+    padding-left: 50px;
+}
+
+.time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.digital-time{
+    height: 50px;
+    width: 100px;
+    background: black;
+    margin: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: futura;
+    color: skyblue;
+    border-radius: 10px;
+}
+
+.date{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    font-family: futura;
+}
