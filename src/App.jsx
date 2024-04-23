@@ -5,6 +5,7 @@ import './App.css'
 import PaginationTest from './PaginationTest'
 import DigitalClock from './components/2. digital-clock/DigitalClock'
 import CountdownTimmerTest from './components/3.countDown/test'
+import StepProgressBarTest from './components/4.progressBar/test'
 function App() {
 
   return (
@@ -12,6 +13,7 @@ function App() {
         <PaginationTest/>
         <DigitalClock/>
         <CountdownTimmerTest/>
+        <StepProgressBarTest/>
     </>
   )
 }
