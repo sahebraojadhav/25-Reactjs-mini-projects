@@ -8,6 +8,7 @@ import CountdownTimmerTest from './components/3.countDown/test'
 import StepProgressBarTest from './components/4.progressBar/test'
 import RandomQuoteGenerator from './components/5.RandomQuoteGenerator'
 import ToooltipTest from './components/6.ToolTipTest/test'
+import CurrencyConverter from './components/7.currency-converter'
 function App() {
 
   return (
@@ -17,7 +18,8 @@ function App() {
         <CountdownTimmerTest/>
         <StepProgressBarTest/>
         <RandomQuoteGenerator/>
-       <ToooltipTest/>
+        <ToooltipTest/>
+        <CurrencyConverter/>
     </>
   )
 }
