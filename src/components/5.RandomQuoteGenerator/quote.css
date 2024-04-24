@@ -1,0 +1,47 @@
+.random-quote-generator{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+.quote-wrapper{
+    text-align: center;
+    padding-top: 4px;
+    background-color: #F5F5F5;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+.quote-wrapper p{
+    margin: 8px;
+    width: 100%;
+}
+
+.refresh-btn{
+    padding: 7px 20px;
+    background-color: black;
+    border: none;
+    color: #F5F5F5;
+    font-family: futura;
+    border-radius: 10px;
+}
+
+.author-class{
+    width: 15%;
+    background-color: #2196F3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40%;
+    border-radius: 10px;
+}
+
+.loading{
+   margin-left: 40%;
+}
