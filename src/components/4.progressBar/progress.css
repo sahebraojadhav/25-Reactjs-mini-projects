@@ -25,7 +25,7 @@
     background-color: #4caf50;
 }
 
-.step-buttons-wrapper{
+.step-button-wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,3 +41,4 @@
     cursor: pointer;
     color: black;
 }
+
