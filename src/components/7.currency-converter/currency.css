@@ -4,3 +4,13 @@
     justify-content: center;
     flex-direction: column;
 }
+
+input{
+    padding: 10px 1px;
+    font-family: futura;
+}
+
+select{
+    padding: 10px 2px;
+    border-left: none;
+}
