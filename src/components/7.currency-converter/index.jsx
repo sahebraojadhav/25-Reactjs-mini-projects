@@ -82,7 +82,7 @@ function CurrencyConverter() {
            }
         </select>
       </div>
-      <p>Exchange Rate:1 {fromCurrency}={exchangeRate} {toCurrency}</p>
+      <p className="exchange-rate">Exchange Rate:1 {fromCurrency}={exchangeRate} {toCurrency}</p>
     </div>
   );
 }
