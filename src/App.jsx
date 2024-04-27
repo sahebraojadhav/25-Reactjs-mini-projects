@@ -9,6 +9,8 @@ import StepProgressBarTest from './components/4.progressBar/test'
 import RandomQuoteGenerator from './components/5.RandomQuoteGenerator'
 import ToooltipTest from './components/6.ToolTipTest/test'
 import CurrencyConverter from './components/7.currency-converter'
+import FilterProduct from './components/8.FilterProduct'
+import RenderRandom from './components/8.FilterProduct/text'
 function App() {
 
   return (
@@ -20,6 +22,8 @@ function App() {
         <RandomQuoteGenerator/>
         <ToooltipTest/>
         <CurrencyConverter/>
+        <FilterProduct/>
+        <RenderRandom/>
     </>
   )
 }
