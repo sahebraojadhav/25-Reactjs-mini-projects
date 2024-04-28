@@ -8,7 +8,7 @@ function RenderRandom({category}) {
     <div className="product-subcategory">
       {category &&
         category.length > 0 &&
-        category.map((cat, index) => <button>{cat}</button>)}
+        category.map((cat, index) => <button>{cat} "heyy"</button>)}
     </div>
   );
 }

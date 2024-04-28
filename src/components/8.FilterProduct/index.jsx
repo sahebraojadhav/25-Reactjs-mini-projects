@@ -17,7 +17,7 @@ function FilterProduct(){
         console.log(result.products[1].category);
     }
 
-    function getAllCategory(){
+    async function getAllCategory(){
         if(products){
             const allCategory=products.map((product)=>{
             return product.category;
@@ -29,17 +29,21 @@ function FilterProduct(){
        
     }
 
-    useEffect(()=>{
-        getAllProducts();
-        getAllCategory();
-    },[])
+    useEffect(() => {
+        const fetchData = async () => {
+            await getAllProducts();
+            await getAllCategory();
+        };
+    
+        fetchData();
+    }, []);
 
 
     return(
         <div className="main-container">
             <h1>filter product component</h1>
 
-           { (category) ? <RenderRandom/> :null }
+           { (category) ? <RenderRandom category={category}/> :null }
 
             <div className="product-info">
             {
