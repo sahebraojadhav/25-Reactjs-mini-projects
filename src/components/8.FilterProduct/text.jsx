@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 function RenderRandom({category}) {
 
-    console.log(category);
+    console.log("category",category);
 
   return (
     <div className="product-subcategory">

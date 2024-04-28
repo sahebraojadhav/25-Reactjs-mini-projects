@@ -17,12 +17,21 @@ function FilterProduct(){
         console.log(result.products[1].category);
     }
 
-    const uniqueCategories=products && products.length >0 ?
-    [...new Set(products.map(productItem=> productItem.category))]
-     :[];
+    function getAllCategory(){
+        if(products){
+            const allCategory=products.map((product)=>{
+            return product.category;
+        })
+        const filteredCategory=new Set([...allCategory]);
+        console.log("filteredCategory",filteredCategory);
+        setCategory(filteredCategory);
+        }
+       
+    }
 
     useEffect(()=>{
         getAllProducts();
+        getAllCategory();
     },[])
 
 
@@ -30,7 +39,7 @@ function FilterProduct(){
         <div className="main-container">
             <h1>filter product component</h1>
 
-            <RenderRandom category={category}/>
+           { (category) ? <RenderRandom/> :null }
 
             <div className="product-info">
             {
