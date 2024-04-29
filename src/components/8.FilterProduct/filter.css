@@ -1,0 +1,35 @@
+.filter-products-container{
+    margin-top: 30px;
+}
+
+.filter-products-container .list-of-products{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    list-style: none;
+}
+
+.filter-products-container .list-of-products li{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 30%;
+    height: 100px;
+    gap: 15px;
+}
+
+.filter-categories-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;   
+}
+
+.filter-categories-container button{
+    padding: 8px 15px;
+    border-radius: 10px;
+    background-color: skyblue;
+    border: none;
+    cursor: pointer;
+}

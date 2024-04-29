@@ -1,68 +1,102 @@
 import { useEffect, useState } from "react";
-import RenderRandom from "./text";
+import "./filter.css";
 
+function FilterProducts() {
+  const [loading, setLoading] = useState(false);
+  const [products, setProducts] = useState([]);
+  const [currentSelectedCategory, setCurrentSelectedCategory] = useState("");
+  const [filteredItems, setFilteredItems] = useState([]);
 
-function FilterProduct(){
-    const [products,setProducts]=useState();
-    const [loading,isLoading]=useState(false);
-    const [category,setCategory]=useState(new Set());
+  async function fetchProducts() {
+    try {
+      setLoading(true);
+      const apiResponse = await fetch("https://dummyjson.com/products", {
+        method: "GET",
+      });
 
-    async function getAllProducts(){
-        const response=await fetch('https://dummyjson.com/products/',{
-            method:"GET"
-        });
-        const result=await response.json();
+      const result = await apiResponse.json();
+
+      if (result && result.products && result.products.length > 0) {
+        setLoading(false);
         setProducts(result.products);
-        console.log(result.products)
-        console.log(result.products[1].category);
+        setFilteredItems(result.products);
+      }
+    } catch (e) {
+      setLoading(false);
+      console.log(e);
     }
+  }
 
-    async function getAllCategory(){
-        if(products){
-            const allCategory=products.map((product)=>{
-            return product.category;
-        })
-        const filteredCategory=new Set([...allCategory]);
-        console.log("filteredCategory",filteredCategory);
-        setCategory(filteredCategory);
-        }
-       
-    }
+  useEffect(() => {
+    fetchProducts();
+  }, []);
 
-    useEffect(() => {
-        const fetchData = async () => {
-            await getAllProducts();
-            await getAllCategory();
-        };
-    
-        fetchData();
-    }, []);
+  useEffect(() => {
+    const cpyProducts = [...products];
+    setFilteredItems(
+      currentSelectedCategory !== ""
+        ? cpyProducts.filter(
+            (productItem) =>
+              productItem.category.toLowerCase() ===
+              currentSelectedCategory.toLowerCase()
+          )
+        : cpyProducts
+    );
+  }, [currentSelectedCategory]);
 
+  const uniqueCategories =
+    products && products.length > 0
+      ? [...new Set(products.map((productItem) => productItem.category))]
+      : [];
 
-    return(
-        <div className="main-container">
-            <h1>filter product component</h1>
+  if (loading) {
+    return <h3>Fetching the products ! Please wait</h3>;
+  }
 
-           { (category) ? <RenderRandom category={category}/> :null }
-
-            <div className="product-info">
-            {
-            products && (products.length>0) && (products.map(
-                (product)=>(
-                    <div key={product.id} className="product">
-                        <p className="product-title">{product.title}</p>
-                        <button className="product-category">{product.category}</button>
-                    </div>
-                )
+  return (
+    <div className="filter-products-container">
+      <h1>Filter Products By Category</h1>
+      <div className="filter-categories-container">
+        {uniqueCategories.map((uniqueCategoryItem) => (
+          <button
+            onClick={() =>
+              setCurrentSelectedCategory(
+                currentSelectedCategory !== "" &&
+                  currentSelectedCategory === uniqueCategoryItem
+                  ? ""
+                  : uniqueCategoryItem
+              )
+            }
+            className={`${currentSelectedCategory === uniqueCategoryItem ? 'active' : ''}`}
+          >
+            {uniqueCategoryItem}
+          </button>
+        ))}
+      </div>
+      <ul className="list-of-products">
+        {filteredItems && filteredItems.length > 0
+          ? filteredItems.map((productItem) => (
+              <li key={productItem.id}>
+                <p>{productItem.title}</p>
+                <button>{productItem.category}</button>
+              </li>
             ))
-           }
-            </div>
-   
-        </div>
-    )
+          : null}
+      </ul>
+    </div>
+  );
 }
 
-export default FilterProduct;
+export default FilterProducts;
 
 
-//1:45
+/*
+
+what we did here 
+1.api call 
+2.we stored category in normal varibles
+3. we rendered categories added onchange and add changes in state varible
+4.then we have used useEFfect on it once button clicked here we filter the items and add to filted items 
+5.filterd items chnged then we will rneder all those items
+
+*/
