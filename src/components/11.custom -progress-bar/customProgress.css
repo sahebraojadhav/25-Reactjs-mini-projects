@@ -1,0 +1,31 @@
+.progress-container{
+    height: 20px;
+    width: 300px;
+    background-color: yellow;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress-wrapper{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputs{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress{
+    transition: width 1s ease;
+}
+
+.main-progress-container{
+    border: 2px solid yellow;
+    margin: 10% 10% 0 10%;
+    padding: 3%;
+}

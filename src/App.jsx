@@ -14,6 +14,7 @@ import RenderRandom from './components/8.FilterProduct/text'
 import TipCalculator from './components/9.tip-calculator'
 import MusicPlayer from './components/10.music-player'
 import OwnMusicPlayer from './components/10..music-player'
+import CustomProgressBar from './components/11.custom -progress-bar'
 function App() {
 
   return (
@@ -30,6 +31,7 @@ function App() {
         <TipCalculator/>
         <MusicPlayer/>
         <OwnMusicPlayer/>
+        <CustomProgressBar/>
     </>
   )
 }
