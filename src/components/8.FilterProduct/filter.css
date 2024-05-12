@@ -8,15 +8,19 @@
     gap: 10px;
     justify-content: center;
     list-style: none;
+   
 }
 
 .filter-products-container .list-of-products li{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 30%;
+    width: 25%;
     height: 100px;
     gap: 15px;
+    background-color: black;
+    color: yellow;
+    border-radius: 10px;
 }
 
 .filter-categories-container{
@@ -32,4 +36,21 @@
     background-color: skyblue;
     border: none;
     cursor: pointer;
+    font-family: nexa;
+}
+
+.list-of-products P{
+    margin: 10px;
+    margin-left: 5px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-of-products button{
+   margin: auto;
+   padding: 5px;
+  
+   font-family: nexa;
 }

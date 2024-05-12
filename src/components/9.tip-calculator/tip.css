@@ -1,0 +1,61 @@
+.input-div p{
+    width: 100%;
+}
+
+.tip-values p{
+    width: 100%;
+}
+
+.tip-calculator-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.input-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.bill-amount{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.tip-percentage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.number-of-people{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.tip-calculator-div button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+    background-color: #197297;
+    font-family: nexa;
+    border: none;
+    border-radius: 10px;
+}
+
+.tip-calculator-div{
+    border: 1px solid yellow;
+    margin: 0 10%;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}

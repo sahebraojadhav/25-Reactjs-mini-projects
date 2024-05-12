@@ -11,6 +11,9 @@ import ToooltipTest from './components/6.ToolTipTest/test'
 import CurrencyConverter from './components/7.currency-converter'
 import FilterProduct from './components/8.FilterProduct'
 import RenderRandom from './components/8.FilterProduct/text'
+import TipCalculator from './components/9.tip-calculator'
+import MusicPlayer from './components/10.music-player'
+import OwnMusicPlayer from './components/10..music-player'
 function App() {
 
   return (
@@ -24,6 +27,9 @@ function App() {
         <CurrencyConverter/>
         <FilterProduct/>
         <RenderRandom/>
+        <TipCalculator/>
+        <MusicPlayer/>
+        <OwnMusicPlayer/>
     </>
   )
 }
