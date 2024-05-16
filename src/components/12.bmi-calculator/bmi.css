@@ -1,0 +1,30 @@
+.bmi-container{
+    margin: 10% 20% 10% 20%;
+    border: 2px solid yellow;
+}
+
+.input-fields{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.output{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    flex-direction: column;
+    margin-left: 35%;
+}
+
+p{
+    width: 100%;
+}
+
+input{
+    padding: 10px;
+    margin-left: 3px;
+}

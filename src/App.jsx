@@ -15,6 +15,10 @@ import TipCalculator from './components/9.tip-calculator'
 import MusicPlayer from './components/10.music-player'
 import OwnMusicPlayer from './components/10..music-player'
 import CustomProgressBar from './components/11.custom -progress-bar'
+import BmiCalculator from './components/12.bmi-calculator'
+import ButtonRippleEffect from './components/13.bubble-ripple-effect'
+import DragAndDropCustomImplementation from './components/14.DragAndDrop'
+import FileStructure from './components/15.folder-structure/components/FileStructure'
 function App() {
 
   return (
@@ -32,6 +36,10 @@ function App() {
         <MusicPlayer/>
         <OwnMusicPlayer/>
         <CustomProgressBar/>
+        <BmiCalculator/>
+        <ButtonRippleEffect/>
+        <DragAndDropCustomImplementation/>
+        <FileStructure/>
     </>
   )
 }
