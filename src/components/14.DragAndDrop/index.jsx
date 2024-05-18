@@ -9,9 +9,11 @@ function DragAndDropCustomImplementation() {
         {id:5, title:"task 5",status:"todo"}
     ] 
     )
+
+    const [draggedItem,setDraggedItem]=useState([]);
   return (
     <div>
-      
+       
     </div>
   )
 }
