@@ -20,6 +20,7 @@ import ButtonRippleEffect from './components/13.bubble-ripple-effect'
 import DragAndDropCustomImplementation from './components/14.DragAndDrop'
 import FileStructure from './components/15.folder-structure/components/FileStructure'
 import Application from './components/14..drag-and-drop'
+import Practise from './components/16.practise/Practise'
 function App() {
 
   return (
@@ -42,6 +43,7 @@ function App() {
         <DragAndDropCustomImplementation/>
         <FileStructure/>
         <Application/>
+        <Practise/>
     </>
   )
 }
