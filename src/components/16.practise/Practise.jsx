@@ -1,6 +1,19 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
+
+import { fetchDataFromApi } from './api';
 
 function Practise() {
+
+  useEffect(()=>{
+    apiTesting()
+  },[])
+
+  const apiTesting=()=>{
+    fetchDataFromApi('./movie/popular').
+    then((res)=>{
+       console.log(res);
+    })
+  }
 
     const[previous,setPrevious]=useState('hello chai pello');
     const arr=[10,20,30];
