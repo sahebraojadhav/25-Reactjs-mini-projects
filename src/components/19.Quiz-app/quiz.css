@@ -1,0 +1,21 @@
+.quiz-container{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.question{
+    border: 1px solid yellow;
+    padding: 10px;
+}
+
+.options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+}

@@ -22,6 +22,9 @@ import FileStructure from './components/15.folder-structure/components/FileStruc
 import Application from './components/14..drag-and-drop'
 import Practise from './components/16.practise/Practise'
 import TickTacToe from './components/17.tic-tac-toe/TickTacToe'
+import FormValidation from './components/18.form_validation'
+import FileUpload from './components/19.fileUploadProject/FileUpload'
+import QuizApplication from './components/19.Quiz-app'
 function App() {
 
   return (
@@ -46,6 +49,9 @@ function App() {
         <Application/>
         <Practise/>
         <TickTacToe/>
+        <FormValidation/>
+        <FileUpload/>
+        <QuizApplication/>
     </>
   )
 }
