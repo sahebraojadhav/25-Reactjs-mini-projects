@@ -25,6 +25,7 @@ import TickTacToe from './components/17.tic-tac-toe/TickTacToe'
 import FormValidation from './components/18.form_validation'
 import FileUpload from './components/19.fileUploadProject/FileUpload'
 import QuizApplication from './components/19.Quiz-app'
+import QuizApp from './components/20.quiz-application/QuizApp'
 function App() {
 
   return (
@@ -52,6 +53,7 @@ function App() {
         <FormValidation/>
         <FileUpload/>
         <QuizApplication/>
+        <QuizApp/>
     </>
   )
 }
